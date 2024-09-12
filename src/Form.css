@@ -1,0 +1,140 @@
+/* General container styling */
+.todo-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form styling */
+  .todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .todo-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .todo-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .todo-submit {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .todo-submit:hover {
+    background-color: #45a049;
+  }
+  
+  /* Todo list styling */
+  .todo-list {
+    margin-top: 20px;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todo-checkbox {
+    margin-right: 10px;
+  }
+  
+  .todo-text {
+    flex-grow: 1;
+    font-size: 16px;
+  }
+  
+  .todo-text.checked {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .todo-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .todo-delete:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  
+  /* For tablets and small desktops */
+  @media (max-width: 768px) {
+    .todo-container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .todo-input,
+    .todo-submit {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .todo-item {
+      font-size: 14px;
+    }
+  
+    .todo-delete {
+      padding: 4px 8px;
+      font-size: 14px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .todo-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .todo-input,
+    .todo-submit {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .todo-item {
+      /* flex-direction: column; */
+      align-items: flex-start;
+      font-size: 12px;
+    }
+  
+    .todo-checkbox {
+      margin-bottom: 5px;
+    }
+  
+    .todo-delete {
+      padding: 3px 6px;
+      font-size: 12px;
+    }
+  }
+  
